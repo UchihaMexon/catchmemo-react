@@ -2389,12 +2389,10 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   line-height: 0.85;
-  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   color: var(--accent-primary);
   text-decoration: none;
   cursor: default;
+  text-shadow: 0 0 20px rgba(230, 104, 60, 0.4);
 }
 
 .flip-inner-top,
