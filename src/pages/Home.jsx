@@ -223,7 +223,7 @@ const Home = () => {
                     <div className="mini-step active" data-step={1}>
                       <span className="mini-step-num">1</span>
                       <div className="mini-step-text">
-                        <h4>Sign Up &amp; Create</h4>
+                        <h3>Sign Up &amp; Create</h3>
                         <p>
                           Sign up and create an event. Customize your page to
                           match your style. Adjust backgrounds, colors, text,
@@ -235,7 +235,7 @@ const Home = () => {
                     <div className="mini-step" data-step={2}>
                       <span className="mini-step-num">2</span>
                       <div className="mini-step-text">
-                        <h4>Design your QR Sign</h4>
+                        <h3>Design your QR Sign</h3>
                         <p>
                           Create your beautiful card. Use one of our Canva
                           templates or create your own. Download the QR code
@@ -246,7 +246,7 @@ const Home = () => {
                     <div className="mini-step" data-step={3}>
                       <span className="mini-step-num">3</span>
                       <div className="mini-step-text">
-                        <h4>Live Digital Photowall</h4>
+                        <h3>Live Digital Photowall</h3>
                         <p>
                           Create an engaging and interactive experience with our
                           optional Live Photo Wall. As guests upload, photos
@@ -260,7 +260,7 @@ const Home = () => {
                     <div className="mini-step" data-step={4}>
                       <span className="mini-step-num">4</span>
                       <div className="mini-step-text">
-                        <h4>Enjoy the Memories</h4>
+                        <h3>Enjoy the Memories</h3>
                         <p>
                           Download all guest photos and videos in full
                           high-resolution quality. Relive your special day
@@ -850,7 +850,7 @@ const Home = () => {
                 data-lenis-prevent="true"
               >
                 <div className="theme-modal-image-side">
-                  <img 
+                  <img alt="Event photo"  
                     src
                     alt
                     className="theme-modal-img"

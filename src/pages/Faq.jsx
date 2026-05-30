@@ -22,9 +22,9 @@ const Faq = () => {
             <div className="faq-accordion-grid">
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     How do guests share their photos?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">
@@ -38,9 +38,9 @@ const Faq = () => {
               </div>
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     What kind of events is Catchmemo for?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">
@@ -54,9 +54,9 @@ const Faq = () => {
               </div>
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     Do guests need to create an account?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">
@@ -70,9 +70,9 @@ const Faq = () => {
               </div>
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     How does the Live Photo Wall work?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">
@@ -86,9 +86,9 @@ const Faq = () => {
               </div>
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     Are the photos secure and private?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">
@@ -102,9 +102,9 @@ const Faq = () => {
               </div>
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     Is Catchmemo free to use?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">
@@ -120,9 +120,9 @@ const Faq = () => {
               </div>
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     How do I share the QR code with guests?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">
@@ -138,9 +138,9 @@ const Faq = () => {
               </div>
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     How long is event media stored after the event?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">
@@ -156,9 +156,9 @@ const Faq = () => {
               </div>
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     Can guests upload videos as well as photos?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">
@@ -172,10 +172,10 @@ const Faq = () => {
               </div>
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     Can I moderate the photos before they appear on the Live
                     Photo Wall?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">
@@ -190,9 +190,9 @@ const Faq = () => {
               </div>
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     Can I customize my event page and QR card?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">
@@ -207,9 +207,9 @@ const Faq = () => {
               </div>
               <div className="faq-accordion-card">
                 <div className="accordion-header">
-                  <h3 className="accordion-question">
+                  <h2 className="accordion-question">
                     How do I download all the photos after the event?
-                  </h3>
+                  </h2>
                   <span className="accordion-icon">+</span>
                 </div>
                 <div className="accordion-body">

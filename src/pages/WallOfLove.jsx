@@ -10,9 +10,9 @@ const WallOfLove = () => {
           <div className="featured-story-container">
             <span className="featured-pretitle">[ FEATURED WEDDING ]</span>
             <div className="featured-story-text-col">
-              <h2 className="featured-story-title">
+              <h1 className="featured-story-title">
                 For all the moments Mark &amp; Lexi didn't want to miss!
-              </h2>
+              </h1>
               <p className="featured-story-desc">
                 Don’t just take our word for it! Hear directly from our amazing
                 customers who’ve used Catchmemo to capture and relive their

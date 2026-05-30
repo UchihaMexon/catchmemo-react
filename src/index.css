@@ -697,7 +697,7 @@ body {
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.65);
   margin-bottom: 0.6rem;
   text-transform: uppercase;
 }
@@ -1216,7 +1216,7 @@ body {
 
 .sim-phone-or {
   font-size: 0.52rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.65);
   margin: 4px 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -2753,7 +2753,7 @@ body {
   font-family: "Outfit", sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.65);
   transition:
     transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
     color 0.3s;
@@ -3709,7 +3709,7 @@ body {
   font-family: monospace;
   font-size: 0.72rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.65);
   letter-spacing: 2px;
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -4014,7 +4014,7 @@ body {
   font-family: monospace;
   font-size: 0.72rem;
   font-weight: 600;
-  color: rgba(6, 1, 18, 0.4);
+  color: rgba(6, 1, 18, 0.7);
   letter-spacing: 2px;
   margin-bottom: 6px;
   text-transform: uppercase;
@@ -4340,7 +4340,7 @@ body {
 
 .setup-form label {
   font-size: 0.45rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.65);
   display: block;
   margin-bottom: 2px;
   text-transform: uppercase;
@@ -4394,7 +4394,7 @@ body {
 
 .card-subtitle {
   font-size: 0.48rem;
-  color: rgba(6, 1, 18, 0.5);
+  color: rgba(6, 1, 18, 0.7);
   margin-top: -12px;
 }
 
@@ -4470,7 +4470,7 @@ body {
   font-weight: 800;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  color: rgba(6, 1, 18, 0.5);
+  color: rgba(6, 1, 18, 0.7);
 }
 
 /* Step 3: Table printed sign scene */
@@ -4727,7 +4727,7 @@ body {
 
 .download-text {
   font-size: 0.5rem;
-  color: rgba(6, 1, 18, 0.5);
+  color: rgba(6, 1, 18, 0.7);
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -5211,7 +5211,7 @@ body {
 .card-date-label {
   font-family: monospace;
   font-size: 0.7rem;
-  color: rgba(6, 1, 18, 0.4);
+  color: rgba(6, 1, 18, 0.7);
   letter-spacing: 1px;
 }
 
@@ -5287,7 +5287,7 @@ body {
 .card-footer-text {
   font-size: 0.75rem;
   font-weight: 600;
-  color: rgba(6, 1, 18, 0.5);
+  color: rgba(6, 1, 18, 0.7);
   line-height: 1.3;
   max-width: 160px;
 }
@@ -5952,7 +5952,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: rgba(6, 1, 18, 0.5);
+  color: rgba(6, 1, 18, 0.7);
 }
 
 /* Masonry Testimonial Grid */
@@ -6756,7 +6756,7 @@ body {
   align-items: center;
   gap: 8px;
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .meta-dot {
@@ -6941,7 +6941,7 @@ body {
   align-items: center;
   gap: 10px;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.65);
   margin-bottom: 1rem;
 }
 

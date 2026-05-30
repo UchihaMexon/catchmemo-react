@@ -21,7 +21,7 @@ const CookieBanner = () => {
     <div className="cookie-banner-overlay">
       <div className="cookie-banner-content">
         <div className="cookie-text">
-          <h4>We value your privacy 🍪</h4>
+          <h2>We value your privacy 🍪</h2>
           <p>
             We use cookies to enhance your browsing experience and analyze our
             traffic. By clicking "Accept All", you consent to our use of cookies.
