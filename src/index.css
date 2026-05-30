@@ -4583,7 +4583,7 @@ body {
   height: 100%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url("./wedding.png") center/cover no-repeat;
+    url("./wedding.webp") center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -4676,16 +4676,16 @@ body {
 }
 
 .gal-item.item-1 {
-  background-image: url("./wedding.png");
+  background-image: url("./wedding.webp");
 }
 .gal-item.item-2 {
-  background-image: url("./birthday.png");
+  background-image: url("./birthday.webp");
 }
 .gal-item.item-3 {
-  background-image: url("./baby_shower.png");
+  background-image: url("./baby_shower.webp");
 }
 .gal-item.item-4 {
-  background-image: url("./celebrations.png");
+  background-image: url("./celebrations.webp");
 }
 
 /* Step 6: Download progress */
@@ -6388,7 +6388,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./party_pricing.jpg");
+  background-image: url("./party_pricing.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -6630,7 +6630,7 @@ body {
    ========================================================================== */
 
 .blog-hero-section {
-  background: url("./blog_hero_bg.jpg");
+  background: url("./blog_hero_bg.webp");
   background-size: cover;
   background-position: center;
   padding: 10rem 2rem 5rem 2rem;
