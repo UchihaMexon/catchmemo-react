@@ -20,7 +20,7 @@ const Home = () => {
                 id="hero-bg-img"
                 alt="Catchmemo Memory Collage"
                 className="hero-bg-image"
-                fetchpriority="high"
+                fetchPriority="high"
                 decoding="async"
                 width={1024}
                 height={682}

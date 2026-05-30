@@ -7743,3 +7743,21 @@ body {
 .flowchart-container.linear-layout .flowchart-sim-phone:hover {
     transform: none !important;
 }
+
+/* ==============================================================
+   PERFORMANCE OPTIMIZATIONS (GPU ACCELERATION)
+   ============================================================== */
+/* Tell the browser to prepare these elements for hardware-accelerated animations to prevent lagging on slow devices */
+.reveal-wrapper,
+.flow-heading,
+.flow-step,
+.flow-arrow-right .arrow-path,
+.pg-img,
+.hero-title .line span {
+    will-change: transform, opacity;
+}
+
+/* For stroke animations specifically */
+.arrow-path {
+    will-change: stroke-dashoffset;
+}
