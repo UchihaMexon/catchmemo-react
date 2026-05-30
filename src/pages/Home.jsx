@@ -554,7 +554,7 @@ const Home = () => {
                   width: "calc(100% + 4em)",
                   marginLeft: "-2em",
                   marginRight: "-2em",
-                  padding: "0 0 40px 0",
+                  padding: "40px 0 40px 0",
                   background: "transparent",
                 }}
               >
