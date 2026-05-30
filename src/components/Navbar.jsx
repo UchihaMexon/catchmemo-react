@@ -25,6 +25,7 @@ const Navbar = () => {
       </div>
       <div className="nav-menu">
         <div className="nav-links">
+          <Link to="/">Home</Link>
           <Link to="/celebration">Celebration</Link>
           <Link to="/wall-of-love">Wall of love</Link>
           <Link to="/pricing">Pricing</Link>

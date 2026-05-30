@@ -1529,6 +1529,13 @@ body {
   margin-top: 1rem;
 }
 
+@media (max-width: 768px) {
+  .theme-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
 .theme-card {
   position: relative;
   height: 280px;
