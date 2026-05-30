@@ -688,20 +688,20 @@ const Home = () => {
                 </h3>
                 <div className="press-logos-wrapper">
                   <div className="press-logos">
-                    <span className="press-logo">🎉 Events Hosted: 500+</span>
-                    <span className="press-logo">📸 Memories Shared: 2000+</span>
-                    <span className="press-logo">😊 Happiness Index: 99.4%</span>
-                    <span className="press-logo">🚀 Zero Apps Required</span>
-                    <span className="press-logo">⏱️ Setup in Seconds</span>
-                    <span className="press-logo">🔒 100% Private &amp; Secure</span>
+                    <span className="press-logo">Events Hosted: 500+</span>
+                    <span className="press-logo">Memories Shared: 2000+</span>
+                    <span className="press-logo">Happiness Index: 99.4%</span>
+                    <span className="press-logo">Zero Apps Required</span>
+                    <span className="press-logo">Setup in Seconds</span>
+                    <span className="press-logo">100% Private &amp; Secure</span>
                     
                     {/* Duplicate set for infinite scroll effect */}
-                    <span className="press-logo">🎉 Events Hosted: 500+</span>
-                    <span className="press-logo">📸 Memories Shared: 2000+</span>
-                    <span className="press-logo">😊 Happiness Index: 99.4%</span>
-                    <span className="press-logo">🚀 Zero Apps Required</span>
-                    <span className="press-logo">⏱️ Setup in Seconds</span>
-                    <span className="press-logo">🔒 100% Private &amp; Secure</span>
+                    <span className="press-logo">Events Hosted: 500+</span>
+                    <span className="press-logo">Memories Shared: 2000+</span>
+                    <span className="press-logo">Happiness Index: 99.4%</span>
+                    <span className="press-logo">Zero Apps Required</span>
+                    <span className="press-logo">Setup in Seconds</span>
+                    <span className="press-logo">100% Private &amp; Secure</span>
                   </div>
                 </div>
               </div>
