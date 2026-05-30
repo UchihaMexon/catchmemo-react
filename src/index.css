@@ -2392,7 +2392,6 @@ body {
   color: var(--accent-primary);
   text-decoration: none;
   cursor: default;
-  text-shadow: 0 0 20px rgba(230, 104, 60, 0.4);
 }
 
 
