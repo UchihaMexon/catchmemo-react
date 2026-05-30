@@ -191,8 +191,8 @@ const useHomeAnimations = () => {
             // 0. Rubriken hoppar in (Letter Reveal Animation)
             .fromTo(flowHeading.querySelectorAll("span"), { y: "110%", opacity: 1 }, { y: "0%", opacity: 1, duration: 0.5, ease: "power3.out", stagger: 0.02 })
             
-            // 1. All elements come in smoothly at the same time
-            .to(flowchartSteps, { y: 0, opacity: 1, scale: 1, duration: 0.8, stagger: 0.05, ease: "power3.out" }, "-=0.2")
+            // 1. All elements come in smoothly one by one
+            .to(flowchartSteps, { y: 0, opacity: 1, scale: 1, duration: 0.8, stagger: 0.15, ease: "power3.out" }, "-=0.2")
             .to(flowchartArrows, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, "-=0.6")
             .to(upBars, { width: "100%", duration: 0.6, stagger: 0.1, ease: "power1.inOut" }, "-=0.5");
         }
