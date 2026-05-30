@@ -684,25 +684,24 @@ const Home = () => {
                 }}
               >
                 <h3 className="press-title" style={{ marginBottom: "30px" }}>
-                  AS SEEN IN
+                  THE SMART WAY TO CELEBRATE
                 </h3>
                 <div className="press-logos-wrapper">
                   <div className="press-logos">
-                    <span className="press-logo">VOGUE</span>
-                    <span className="press-logo">TechCrunch</span>
-                    <span className="press-logo">WIRED</span>
-                    <span className="press-logo">Martha Stewart</span>
-                    <span className="press-logo">THE VERGE</span>
-                    <span className="press-logo">VOGUE</span>
-                    <span className="press-logo">TechCrunch</span>
-                    <span className="press-logo">WIRED</span>
-                    <span className="press-logo">Martha Stewart</span>
-                    <span className="press-logo">THE VERGE</span>
-                    <span className="press-logo">VOGUE</span>
-                    <span className="press-logo">TechCrunch</span>
-                    <span className="press-logo">WIRED</span>
-                    <span className="press-logo">Martha Stewart</span>
-                    <span className="press-logo">THE VERGE</span>
+                    <span className="press-logo">🎉 Events Hosted: 500+</span>
+                    <span className="press-logo">📸 Memories Shared: 2000+</span>
+                    <span className="press-logo">😊 Happiness Index: 99.4%</span>
+                    <span className="press-logo">🚀 Zero Apps Required</span>
+                    <span className="press-logo">⏱️ Setup in Seconds</span>
+                    <span className="press-logo">🔒 100% Private &amp; Secure</span>
+                    
+                    {/* Duplicate set for infinite scroll effect */}
+                    <span className="press-logo">🎉 Events Hosted: 500+</span>
+                    <span className="press-logo">📸 Memories Shared: 2000+</span>
+                    <span className="press-logo">😊 Happiness Index: 99.4%</span>
+                    <span className="press-logo">🚀 Zero Apps Required</span>
+                    <span className="press-logo">⏱️ Setup in Seconds</span>
+                    <span className="press-logo">🔒 100% Private &amp; Secure</span>
                   </div>
                 </div>
               </div>
