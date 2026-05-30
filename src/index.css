@@ -6473,7 +6473,10 @@ body {
 .how-qr-title {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #060112;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--accent-primary);
   margin-bottom: 1.5rem;
   font-family: "Outfit", sans-serif;
 }
@@ -6501,7 +6504,10 @@ body {
 .steps-heading {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #060112;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--accent-primary);
   margin-bottom: 3.5rem;
   text-align: center;
   font-family: "Outfit", sans-serif;
