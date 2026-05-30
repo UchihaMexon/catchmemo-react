@@ -70,7 +70,9 @@ const Home = () => {
               </div>
             </div>
           </section>
-          <div className="depth-gallery-container">
+          
+              
+<div className="depth-gallery-container">
             <div className="depth-transition-divider">
               <svg
                 viewBox="0 0 1440 100"
@@ -105,6 +107,107 @@ const Home = () => {
               </svg>
             </div>
             <div className="depth-gallery-sticky">
+<section className="flowchart-section depth-item light-theme">
+                <div className="flow-heading-wrapper desktop-heading-fix" style={{ position: "absolute", top: "clamp(80px, 15vh, 120px)", left: "50%", transform: "translateX(-50%)", width: "100%", margin: "0", zIndex: "10" }}>
+                  <h2 className="gradient-text flow-heading" style={{ textAlign: "center", lineHeight: "1.1" }}>Easy to use</h2>
+                </div>
+                
+                
+                
+                <div className="flowchart-container linear-layout">
+                    {/* Step 1 */}
+                    <div className="flow-step">
+                      <div className="flow-graphic-wrapper"><div className="flow-card qr-card flow-node-1">
+                        <div className="qr-frame">
+                          <div className="qr-corner tl" />
+                          <div className="qr-corner tr" />
+                          <div className="qr-corner bl" />
+                          <div className="qr-corner br" />
+                          <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://catchmemo.com" alt="QR" className="qr-img" />
+                        </div>
+                        
+                      </div></div>
+                      <div className="flow-text">
+                        <h3>1. Scan QR Code</h3>
+                        <p>No app to download. Guests simply point their camera.</p>
+                      </div>
+                    </div>
+
+                    {/* Arrow 1 */}
+                    <div className="flow-arrow-wrapper">
+                      <svg className="flow-arrow flow-arrow-right" viewBox="0 0 120 20">
+                        <path className="arrow-path" d="M 5 12 Q 55 2 110 12 M 95 5 Q 105 8 110 12 Q 100 17 95 20" stroke="var(--accent-secondary)" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+
+                    {/* Step 2 */}
+                    <div className="flow-step">
+                      <div className="flow-graphic-wrapper"><div className="flow-card upload-card flow-node-2">
+                        <div className="upload-item">
+                          <div className="up-thumb" style={{ backgroundImage: "url('/beach_wedding_love.webp')" }} />
+                          <div className="up-info">
+                            <span className="up-name">IMG_3789.JPG</span>
+                            <div className="up-bar"><div className="up-progress p1" /></div>
+                          </div>
+                        </div>
+                        <div className="upload-item">
+                          <div className="up-thumb" style={{ backgroundImage: "url('/party_pricing.webp')" }} />
+                          <div className="up-info">
+                            <span className="up-name">IMG_3767.JPG</span>
+                            <div className="up-bar"><div className="up-progress p2" /></div>
+                          </div>
+                        </div>
+                        <div className="upload-item">
+                          <div className="up-thumb" style={{ backgroundImage: "url('/hero_col4.webp')" }} />
+                          <div className="up-info">
+                            <span className="up-name">IMG_3758.JPG</span>
+                            <div className="up-bar"><div className="up-progress p3" /></div>
+                          </div>
+                        </div>
+                      </div></div>
+                      <div className="flow-text">
+                        <h3>2. Snap & Upload</h3>
+                        <p>Guests take photos and upload directly from their browser.</p>
+                      </div>
+                    </div>
+
+                    {/* Arrow 2 */}
+                    <div className="flow-arrow-wrapper">
+                      <svg className="flow-arrow flow-arrow-right" viewBox="0 0 120 20">
+                        <path className="arrow-path" d="M 5 12 Q 55 2 110 12 M 95 5 Q 105 8 110 12 Q 100 17 95 20" stroke="var(--accent-primary)" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+
+                    {/* Step 3 */}
+                    <div className="flow-step">
+                      
+                      <div className="flow-graphic-wrapper"><div className="sim-phone flow-node-3 flowchart-sim-phone" style={{ transform: "scale(0.85)", transformOrigin: "top center" }}>
+                        <div className="sim-phone-notch" />
+                        <div className="sim-phone-screen">
+                          <div className="sim-phone-header">
+                            <span className="sim-phone-logo">Catchmemo</span>
+                          </div>
+                          <div className="sim-phone-body" style={{ padding: "0 10px 10px 10px", justifyContent: "flex-start" }}>
+                            <p className="sim-phone-status" style={{ fontSize: "0.8rem", marginBottom: "15px", color: "#fff" }}>
+                              Sarah's 30th
+                            </p>
+                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', width: '100%' }}>
+                              <div style={{ backgroundImage: "url('/party_pricing.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+                              <div style={{ backgroundImage: "url('/hero_col4.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+                              <div style={{ backgroundImage: "url('/how_it_works.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+                              <div style={{ backgroundImage: "url('/beach_wedding_love.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+                            </div>
+                          </div>
+                        </div>
+                      </div></div>
+                      <div className="flow-text">
+                        <h3>3. Shared Album</h3>
+                        <p>Everything instantly drops into your private digital gallery.</p>
+                      </div>
+                    </div>
+                </div>
+
+              </section>
               <section className="feature-section depth-item">
                 <div className="feature-content left-side">
                   <div className="reveal-wrapper">
@@ -199,228 +302,6 @@ const Home = () => {
                             accept="image/*"
                             style={{ display: "none" }}
                           />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section className="feature-section depth-item zick-zack">
-                <div className="feature-content right-side">
-                  <div className="reveal-wrapper">
-                    <h2 className="gradient-text">No App Required</h2>
-                  </div>
-                  <div className="reveal-wrapper mt-2">
-                    <p className="feature-main-desc">
-                      Your guests simply scan the QR code and upload in seconds.
-                      No apps, no registration – 100% friction-free for all
-                      ages. Perfect for weddings, birthdays, baby showers, and
-                      celebrations of any size. Everyone can participate and
-                      share their perspective of your special day instantly.
-                    </p>
-                  </div>
-                  <div className="mini-steps-list">
-                    <div className="mini-step active" data-step={1}>
-                      <span className="mini-step-num">1</span>
-                      <div className="mini-step-text">
-                        <h3>Sign Up &amp; Create</h3>
-                        <p>
-                          Sign up and create an event. Customize your page to
-                          match your style. Adjust backgrounds, colors, text,
-                          buttons, and more to create a unique and beautiful
-                          experience.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="mini-step" data-step={2}>
-                      <span className="mini-step-num">2</span>
-                      <div className="mini-step-text">
-                        <h3>Design your QR Sign</h3>
-                        <p>
-                          Create your beautiful card. Use one of our Canva
-                          templates or create your own. Download the QR code
-                          from the event easily and place it in the template.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="mini-step" data-step={3}>
-                      <span className="mini-step-num">3</span>
-                      <div className="mini-step-text">
-                        <h3>Live Digital Photowall</h3>
-                        <p>
-                          Create an engaging and interactive experience with our
-                          optional Live Photo Wall. As guests upload, photos
-                          instantly appear on a dynamic wall.{" "}
-                          <a href="#tv-grid" className="scroll-link-tv">
-                            Try the simulator above 📸
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                    <div className="mini-step" data-step={4}>
-                      <span className="mini-step-num">4</span>
-                      <div className="mini-step-text">
-                        <h3>Enjoy the Memories</h3>
-                        <p>
-                          Download all guest photos and videos in full
-                          high-resolution quality. Relive your special day
-                          forever.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="feature-image-wrapper left-side customizer-slide-wrapper">
-                  <div className="theme-cards-grid">
-                    <div
-                      className="theme-card active"
-                      data-step={1}
-                      data-id="wedding"
-                    >
-                      <div className="theme-card-img-wrap">
-                        <img 
-                          src="/beach_wedding_love.webp"
-                          alt="Weddings"
-                          className="theme-card-img"
-                        loading="lazy" />
-                        <div className="theme-card-overlay" />
-                      </div>
-                      <div className="theme-card-content">
-                        <div className="theme-card-arrow-wrap">
-                          <div className="theme-card-arrow">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width={20}
-                              height={20}
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2.5"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            >
-                              <path d="M7 7h10v10" />
-                              <path d="M7 17 17 7" />
-                            </svg>
-                          </div>
-                        </div>
-                        <div className="theme-card-text">
-                          <h3 className="theme-card-title">Weddings</h3>
-                          <p className="theme-card-subtitle">💍 Wedding Day</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="theme-card"
-                      data-step={2}
-                      data-id="birthday"
-                    >
-                      <div className="theme-card-img-wrap">
-                        <img 
-                          src="/party_pricing.webp"
-                          alt="Birthdays"
-                          className="theme-card-img"
-                        loading="lazy" />
-                        <div className="theme-card-overlay" />
-                      </div>
-                      <div className="theme-card-content">
-                        <div className="theme-card-arrow-wrap">
-                          <div className="theme-card-arrow">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width={20}
-                              height={20}
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2.5"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            >
-                              <path d="M7 7h10v10" />
-                              <path d="M7 17 17 7" />
-                            </svg>
-                          </div>
-                        </div>
-                        <div className="theme-card-text">
-                          <h3 className="theme-card-title">Birthdays</h3>
-                          <p className="theme-card-subtitle">
-                            🎂 Birthday Party
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="theme-card" data-step={3} data-id="party">
-                      <div className="theme-card-img-wrap">
-                        <img
-                          src="/hero_col4.webp"
-                          alt="Parties"
-                          className="theme-card-img"
-                        />
-                        <div className="theme-card-overlay" />
-                      </div>
-                      <div className="theme-card-content">
-                        <div className="theme-card-arrow-wrap">
-                          <div className="theme-card-arrow">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width={20}
-                              height={20}
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2.5"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            >
-                              <path d="M7 7h10v10" />
-                              <path d="M7 17 17 7" />
-                            </svg>
-                          </div>
-                        </div>
-                        <div className="theme-card-text">
-                          <h3 className="theme-card-title">Parties</h3>
-                          <p className="theme-card-subtitle">
-                            🥳 Let's Celebrate
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="theme-card"
-                      data-step={4}
-                      data-id="babyshower"
-                    >
-                      <div className="theme-card-img-wrap">
-                        <img 
-                          src="/table_card_baby_shower.webp"
-                          alt="Baby Showers"
-                          className="theme-card-img"
-                        loading="lazy" />
-                        <div className="theme-card-overlay" />
-                      </div>
-                      <div className="theme-card-content">
-                        <div className="theme-card-arrow-wrap">
-                          <div className="theme-card-arrow">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width={20}
-                              height={20}
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2.5"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            >
-                              <path d="M7 7h10v10" />
-                              <path d="M7 17 17 7" />
-                            </svg>
-                          </div>
-                        </div>
-                        <div className="theme-card-text">
-                          <h3 className="theme-card-title">Baby Showers</h3>
-                          <p className="theme-card-subtitle">👶 Baby Shower</p>
                         </div>
                       </div>
                     </div>

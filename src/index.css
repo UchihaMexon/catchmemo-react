@@ -7273,3 +7273,473 @@ body {
     width: 100%;
   }
 }
+
+
+/* ==================================================
+   VISUAL FLOWCHART (HOW IT WORKS)
+   ================================================== */
+.flowchart-section {
+  position: relative;
+  z-index: 10;
+  padding: 60px 2rem 100px 2rem;
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+
+.flowchart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  gap: 40px;
+}
+
+@media (min-width: 900px) {
+  .flowchart-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.flow-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.flow-right {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Base Node Card (Glassmorphism) */
+.flow-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* QR Node */
+.qr-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-frame {
+  position: relative;
+  padding: 15px;
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Scanner Corners */
+.qr-corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--accent-secondary);
+}
+.qr-corner.tl { top: -8px; left: -8px; border-right: none; border-bottom: none; border-top-left-radius: 10px; }
+.qr-corner.tr { top: -8px; right: -8px; border-left: none; border-bottom: none; border-top-right-radius: 10px; }
+.qr-corner.bl { bottom: -8px; left: -8px; border-right: none; border-top: none; border-bottom-left-radius: 10px; }
+.qr-corner.br { bottom: -8px; right: -8px; border-left: none; border-top: none; border-bottom-right-radius: 10px; }
+
+.qr-img {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+.qr-text {
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+/* Upload Node */
+.upload-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.upload-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.up-thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+.up-info {
+  flex: 1;
+}
+
+.up-name {
+  display: block;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 8px;
+}
+
+.up-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.up-progress {
+  height: 100%;
+  background: var(--accent-primary);
+  width: 0%; /* Will be animated */
+}
+
+/* Arrows */
+.flow-arrow {
+  display: none;
+  overflow: visible;
+}
+@media (min-width: 900px) {
+  .flow-arrow-down {
+    display: block;
+    width: 50px;
+    height: 100px;
+  }
+  .flow-arrow-right {
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin-top: 150px;
+  }
+}
+.arrow-path {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400; /* Will be animated */
+}
+
+/* Phone Node */
+.flow-phone {
+  width: 100%;
+  max-width: 320px;
+  background: #ffffff;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 0 8px rgba(255, 255, 255, 0.05);
+  color: #000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-hero {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.phone-hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+.phone-hero-text h4 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.phone-hero-text p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.phone-body {
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.phone-welcome {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.phone-upload-btn {
+  background: #2b2b36;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: default;
+}
+
+.phone-gallery-wrapper h5 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.pg-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+}
+
+.pg-img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  opacity: 0; /* Will be animated */
+  transform: scale(0.9);
+}
+
+.pg-img.tall {
+  grid-row: span 2;
+}
+
+/* ==============================================================
+   FLOWCHART SECTION OVERRIDES & REFINEMENTS
+   ============================================================== */
+
+/* Remove default shadow and radius for the light theme block */
+.flowchart-section.light-theme {
+    background-color: #ffffff !important;
+    color: #111 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.flowchart-section.light-theme .gradient-text {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Linear Layout Structural overrides */
+.flowchart-container.linear-layout {
+    align-items: flex-start;
+}
+
+.flowchart-container.linear-layout .flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 280px;
+}
+
+/* Graphic wrapper for consistent baseline alignment */
+.flowchart-container.linear-layout .flow-graphic-wrapper {
+    height: auto;
+    min-height: 180px; /* Mobile safe size */
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.flowchart-container.linear-layout .flow-text {
+    text-align: center;
+}
+
+.flowchart-container.linear-layout .flow-text h3 {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.flowchart-container.linear-layout .flow-text p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Hide arrows by default on mobile */
+.flowchart-container.linear-layout .flow-arrow-wrapper {
+    display: none;
+}
+
+/* Mobile phone component inside flowchart */
+.flowchart-container.linear-layout .flowchart-sim-phone {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+}
+
+/* DESKTOP REFINEMENTS (min-width: 900px) */
+@media (min-width: 900px) {
+    .flowchart-container.linear-layout .flow-step {
+        max-width: 250px;
+    }
+    
+    /* Pull mobile phone step closer to center visually */
+    .flowchart-container.linear-layout .flow-step:nth-child(5) {
+        max-width: 200px;
+    }
+
+    .flowchart-container.linear-layout .flow-graphic-wrapper {
+        height: 330px;
+        padding: 0;
+    }
+
+    /* Move mobile phone graphic down for vertical alignment */
+    .flowchart-container.linear-layout .flowchart-sim-phone {
+        margin-top: 90px !important; /* Pushed down a bit more to align with the newly lowered cards */
+    }
+
+    /* Arrows display and centering */
+    .flowchart-container.linear-layout .flow-arrow-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 330px;
+        width: 100px;
+        margin: 0 -15px;
+    }
+    
+    .flowchart-container.linear-layout .flow-arrow-right {
+        display: block;
+        width: 100px;
+        height: 20px;
+        margin-top: 0; 
+    }
+}
+
+/* FIX: MAKE CARDS SMALLER AND REMOVE SHADOW */
+.flowchart-container.linear-layout .flow-card {
+    max-width: 180px; /* Gör korten betydligt mindre */
+    box-shadow: none !important; /* Ta bort den smutsiga skuggan */
+    border: 1px solid rgba(0, 0, 0, 0.08) !important; /* Lägg till en extremt mjuk, ljus kant istället så de syns snyggt */
+    border-radius: 20px !important;
+}
+
+@media (min-width: 900px) {
+    .flowchart-container.linear-layout .flow-card {
+        max-width: 200px; /* Lite större på desktop men fortfarande mycket mindre än 250px */
+    }
+}
+
+/* FIX FOR MIDDLE UPLOAD CARD TO PREVENT SQUISHING */
+.flowchart-container.linear-layout .upload-card {
+    padding: 15px !important;
+}
+
+.flowchart-container.linear-layout .upload-card .upload-item {
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.flowchart-container.linear-layout .upload-card .upload-item:last-child {
+    margin-bottom: 0;
+}
+
+.flowchart-container.linear-layout .upload-card .up-thumb {
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+}
+
+.flowchart-container.linear-layout .upload-card .up-name {
+    font-size: 0.65rem;
+    margin-bottom: 4px;
+    color: rgba(0, 0, 0, 0.6) !important; /* Mörkare grå för ljus bakgrund */
+}
+
+.flowchart-container.linear-layout .upload-card .up-bar {
+    height: 3px;
+    background: rgba(0, 0, 0, 0.05); /* Ljusare stapelbotten för vitt kort */
+}
+
+/* Make sure flowchart-section is relative for absolute heading */
+.flowchart-section.light-theme {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* RE-APPLY CUSTOM SIZE FOR EASY TO USE HEADING (SLIGHTLY LARGER) */
+.flowchart-section.light-theme h2.flow-heading {
+    font-size: clamp(2rem, 4vw, 3.2rem) !important; /* Ca 88px, lagom uppskalning från standard 4rem */
+}
+
+/* PUSH EVERYTHING ELSE DOWN TO COMPENSATE FOR LOWER HEADING */
+.flowchart-section.light-theme .flowchart-container {
+    margin-top: 8vh !important; /* Skapar mer andrum i toppen och pressar ner flödesschemat */
+}
+
+/* INCREASE GAP BETWEEN GRAPHICS AND TEXT AS REQUESTED */
+.flowchart-container.linear-layout .flow-text {
+    margin-top: 25px !important; /* Flyttar ner texten en bit från korten/mobilen */
+}
+
+/* PUSH FIRST TWO CARDS DOWN CLOSER TO TEXT */
+@media (min-width: 900px) {
+    .flowchart-container.linear-layout .flow-node-1,
+    .flowchart-container.linear-layout .flow-node-2 {
+        margin-top: 40px !important; /* Flyttar ner de vita korten (QR & Upload) närmre texten */
+    }
+}
+
+/* DISABLE HOVER EFFECT ON MOBILE PHONE IN FLOWCHART */
+.flowchart-container.linear-layout .flowchart-sim-phone:hover {
+    transform: none !important;
+}

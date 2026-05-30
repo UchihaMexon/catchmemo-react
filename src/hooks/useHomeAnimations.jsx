@@ -62,7 +62,7 @@ const useHomeAnimations = () => {
         .to(
           ".curtain-left",
           { xPercent: -100, duration: 1.5, ease: "power4.inOut" },
-          "-=0.2",
+          "-=0.3",
         )
         .to(
           ".curtain-right",
@@ -256,6 +256,50 @@ const useHomeAnimations = () => {
           ".polaroid-intro-title-wrap",
         );
 
+        
+
+        // --- FLOWCHART ANIMATIONS ---
+        const flowHeading = document.querySelector(".flow-heading");
+        const flowchartSteps = document.querySelectorAll(".flow-step");
+        const flowchartArrows = document.querySelectorAll(".arrow-path");
+        const upBars = document.querySelectorAll(".up-progress");
+
+        if (flowchartSteps.length === 3 && flowchartArrows.length === 2) {
+          const flowTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".depth-gallery-container",
+              start: "top 90%",
+              toggleActions: "play none none none"
+            }
+          });
+
+          // Reset arrows and bars initially
+          gsap.set(flowchartArrows, { strokeDashoffset: 100 });
+          gsap.set(upBars, { width: "0%" });
+
+          flowTl
+            // 0. Rubriken hoppar in
+            .fromTo(flowHeading, { y: 40, opacity: 0, scale: 0.9 }, { y: 0, opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.5)" })
+            
+            // 1. QR + Text svävar in
+            .fromTo(flowchartSteps[0], { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.25, ease: "power2.out" }, "-=0.1")
+            
+            // 2. Pilen ritas
+            .to(flowchartArrows[0], { strokeDashoffset: 0, duration: 0.15, ease: "power1.inOut" }, "-=0.1")
+            
+            // 3. Uppladdning + Text svävar in
+            .fromTo(flowchartSteps[1], { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.25, ease: "power2.out" }, "-=0.05")
+            
+            // 3.5 Mätarna fylls på
+            .to(upBars, { width: "100%", duration: 0.25, stagger: 0.05, ease: "power1.inOut" }, "-=0.2")
+            
+            // 4. Pilen ritas
+            .to(flowchartArrows[1], { strokeDashoffset: 0, duration: 0.15, ease: "power1.inOut" }, "-=0.1")
+            
+            // 5. Mobilen + Text svävar in
+            .fromTo(flowchartSteps[2], { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.25, ease: "power2.out" }, "-=0.05");
+        }
+        
         // Desktop only layout animations (min-width: 901px)
         const mm = gsap.matchMedia();
         mm.add("(min-width: 901px)", () => {
@@ -370,7 +414,7 @@ const useHomeAnimations = () => {
                     z: 60,
                     scale: 1.015,
                     ease: "none",
-                    duration: 0.4,
+                    duration: 0.2,
                   },
                   0,
                 );
@@ -685,7 +729,7 @@ const useHomeAnimations = () => {
                         y: 0,
                         rotate: 0,
                         scale: 1,
-                        duration: 0.45, // Snappy, fast flight
+                        duration: 0.25, // Snappy, fast flight
                         ease: "back.out(0.6)", // Short, tight micro-bounce precisely at the end
                       },
                       transitionStart + 0.08 + (i % 3) * 0.035,
@@ -1206,7 +1250,7 @@ const useHomeAnimations = () => {
               gsap.to(oldestCard, {
                 opacity: 0,
                 scale: 0.7,
-                duration: 0.4,
+                duration: 0.2,
                 onComplete: () => oldestCard.remove(),
               });
             }
@@ -1261,7 +1305,7 @@ const useHomeAnimations = () => {
                     rotateX: 0,
                     rotateY: 0,
                     z: 0,
-                    duration: 0.6,
+                    duration: 0.35,
                     ease: "back.out(1.6)",
                   },
                 );
