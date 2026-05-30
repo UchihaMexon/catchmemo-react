@@ -603,10 +603,9 @@ const Home = () => {
           <section className="polaroid-section" id="celebrations">
             <div className="reveal-line" />
             <div className="polaroid-intro-title-wrap">
-              <div className="intro-title flip-link" id="flip-title">
-                <div className="flip-inner-top"></div>
-                <div className="flip-inner-bottom"></div>
-              </div>
+              <a href="https://app.catchmemo.com" className="intro-title flip-link">
+                GET STARTED NOW
+              </a>
             </div>
             <div className="polaroid-static-page">
               <div className="grid">

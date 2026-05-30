@@ -255,60 +255,6 @@ const useHomeAnimations = () => {
         const introTitleWrap = document.querySelector(
           ".polaroid-intro-title-wrap",
         );
-        const flipTitle = document.getElementById("flip-title");
-        const topLayer = flipTitle.querySelector(".flip-inner-top");
-        const bottomLayer = flipTitle.querySelector(".flip-inner-bottom");
-        const flipText = "GET STARTED NOW";
-
-        const createSpans = (container, isBottom = false) => {
-          container.innerHTML = flipText
-            .split("")
-            .map((char, i) => {
-              if (char === " ")
-                return `<span style="width: 0.3em;">&nbsp;</span>`;
-              return `<span class="flip-char" style="transform: translateY(${isBottom ? "100%" : "0%"})">${char}</span>`;
-            })
-            .join("");
-        };
-
-        createSpans(topLayer);
-        createSpans(bottomLayer, true);
-
-        const topChars = topLayer.querySelectorAll(".flip-char");
-        const bottomChars = bottomLayer.querySelectorAll(".flip-char");
-
-        const triggerFlip = () => {
-          gsap.to(topChars, {
-            y: "-100%",
-            stagger: 0.015,
-            duration: 0.4,
-            ease: "power2.inOut",
-          });
-          gsap.to(bottomChars, {
-            y: "0%",
-            stagger: 0.015,
-            duration: 0.4,
-            ease: "power2.inOut",
-          });
-        };
-
-        const resetFlip = () => {
-          gsap.to(topChars, {
-            y: "0%",
-            stagger: 0.015,
-            duration: 0.4,
-            ease: "power2.inOut",
-          });
-          gsap.to(bottomChars, {
-            y: "100%",
-            stagger: 0.015,
-            duration: 0.4,
-            ease: "power2.inOut",
-          });
-        };
-
-        flipTitle.addEventListener("mouseenter", triggerFlip);
-        flipTitle.addEventListener("mouseleave", resetFlip);
 
         // Desktop only layout animations (min-width: 901px)
         const mm = gsap.matchMedia();
@@ -722,11 +668,6 @@ const useHomeAnimations = () => {
                     bottom: "100%",
                     duration: transitionDuration + 0.1,
                     ease: "none",
-                    onStart: () => {
-                      // Trigger the flip once during reveal for effect
-                      gsap.delayedCall(0.3, triggerFlip);
-                      gsap.delayedCall(1.8, resetFlip);
-                    },
                   },
                   transitionStart,
                 );

@@ -2395,28 +2395,7 @@ body {
   text-shadow: 0 0 20px rgba(230, 104, 60, 0.4);
 }
 
-.flip-inner-top,
-.flip-inner-bottom {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
 
-.flip-inner-bottom {
-  position: absolute;
-  inset: 0;
-}
-
-.flip-link span {
-  display: inline-block;
-}
-
-/* Fallback for browsers that don't support text-clip */
-@supports not (background-clip: text) {
-  .liquid-text {
-    -webkit-text-fill-color: #dc2743;
-  }
-}
 
 .grid {
   position: relative;
