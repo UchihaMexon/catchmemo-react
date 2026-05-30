@@ -124,7 +124,7 @@ const Footer = () => {
             <h3 className="footer-col-title">Product</h3>
             <ul className="footer-links">
               <li>
-                <Link to="/wall-of-love">How it works</Link>
+                <Link to="/celebration">Celebration</Link>
               </li>
               <li>
                 <Link to="/pricing">Pricing</Link>

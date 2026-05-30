@@ -7740,8 +7740,11 @@ body {
 }
 
 /* DISABLE HOVER EFFECT ON MOBILE PHONE IN FLOWCHART */
+.flowchart-container.linear-layout .flowchart-sim-phone {
+    pointer-events: none;
+}
 .flowchart-container.linear-layout .flowchart-sim-phone:hover {
-    transform: none !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 15px rgba(230, 104, 60, 0.15) !important;
 }
 
 /* ==============================================================
