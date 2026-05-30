@@ -51,7 +51,7 @@ const Footer = () => {
             <div className="footer-socials">
               {/* Instagram */}
               <a
-                href="https://instagram.com/catchmemo"
+                href="https://www.instagram.com/catch.memo/"
                 target="_blank"
                 aria-label="Instagram"
                 className="social-link"
@@ -74,7 +74,7 @@ const Footer = () => {
               </a>
               {/* TikTok */}
               <a
-                href="https://tiktok.com/@catchmemo"
+                href="https://www.tiktok.com/@catchmemo?_r=1&_t=ZN-96mqPhTBprS"
                 target="_blank"
                 aria-label="TikTok"
                 className="social-link"
