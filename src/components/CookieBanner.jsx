@@ -1,17 +1,23 @@
 import { useState } from "react";
 
 const CookieBanner = () => {
-  const [showBanner, setShowBanner] = useState(() => !localStorage.getItem("cookieConsent"));
+  const [showBanner, setShowBanner] = useState(() => {
+    try {
+      return !localStorage.getItem("cookieConsent");
+    } catch(e) {
+      return true;
+    }
+  });
 
   const handleAccept = () => {
-    localStorage.setItem("cookieConsent", "accepted");
+    try { localStorage.setItem } catch(e) {} localStorage?.setItem("cookieConsent", "accepted");
     setShowBanner(false);
     // Dispatch a custom event so Analytics.jsx can catch it immediately
     window.dispatchEvent(new Event("cookieConsentAccepted"));
   };
 
   const handleDecline = () => {
-    localStorage.setItem("cookieConsent", "declined");
+    try { localStorage.setItem } catch(e) {} localStorage?.setItem("cookieConsent", "declined");
     setShowBanner(false);
   };
 

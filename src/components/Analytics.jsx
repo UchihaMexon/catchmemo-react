@@ -25,7 +25,10 @@ const Analytics = () => {
       console.log("Analytics initialized");
     };
 
-    const consent = localStorage.getItem("cookieConsent");
+    let consent = null;
+    try {
+      consent = localStorage.getItem("cookieConsent");
+    } catch(e) {}
     
     // Initialize immediately if consent was already given
     if (consent === "accepted") {
