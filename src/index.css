@@ -1480,15 +1480,15 @@ body {
   gap: 4px;
 }
 
-.mini-step-text h4 {
+.mini-step-text h3 {
   margin: 0;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #060112;
   transition: color 0.3s ease;
 }
 
-.mini-step.active .mini-step-text h4 {
+.mini-step.active .mini-step-text h3 {
   color: var(--accent-secondary);
 }
 
@@ -3439,7 +3439,7 @@ body {
     height: 26px !important;
     font-size: 0.75rem !important;
   }
-  .mini-step-text h4 {
+  .mini-step-text h3 {
     font-size: 0.82rem !important;
   }
   .mini-step-text p {
