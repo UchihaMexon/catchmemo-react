@@ -207,6 +207,27 @@ const useHomeAnimations = () => {
             { xPercent: 0, duration: 2.5, ease: "power2.inOut" },
             2.4,
           );
+
+        // 2.5 Bento Box Reveal
+        const bentoCards = document.querySelectorAll(".bento-card");
+        if (bentoCards.length > 0) {
+          gsap.fromTo(bentoCards, 
+            { y: 60, opacity: 0, scale: 0.95 },
+            { 
+              scrollTrigger: {
+                trigger: ".bento-grid",
+                start: "top 80%",
+              },
+              y: 0, 
+              opacity: 1, 
+              scale: 1, 
+              stagger: 0.15, 
+              duration: 0.8, 
+              ease: "back.out(1.2)" 
+            }
+          );
+        }
+
         // 3. Depth Gallery Scroll Animations
         // Split ALL Depth Gallery Headings into Staggered Letter Spans for premium entry
         function splitDepthHeadings() {

@@ -12,6 +12,7 @@ import CookieBanner from "./components/CookieBanner";
 import Analytics from "./components/Analytics";
 import useSmoothScroll from "./hooks/useSmoothScroll";
 import "./index.css";
+import "./bento.css";
 
 function App() {
   useSmoothScroll();

@@ -219,53 +219,65 @@ const Home = () => {
                       share their perspective of your special day instantly.
                     </p>
                   </div>
-                  <div className="mini-steps-list">
-                    <div className="mini-step active" data-step={1}>
-                      <span className="mini-step-num">1</span>
-                      <div className="mini-step-text">
-                        <h3>Sign Up &amp; Create</h3>
-                        <p>
-                          Sign up and create an event. Customize your page to
-                          match your style. Adjust backgrounds, colors, text,
-                          buttons, and more to create a unique and beautiful
-                          experience.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="mini-step" data-step={2}>
-                      <span className="mini-step-num">2</span>
-                      <div className="mini-step-text">
-                        <h3>Design your QR Sign</h3>
-                        <p>
-                          Create your beautiful card. Use one of our Canva
-                          templates or create your own. Download the QR code
-                          from the event easily and place it in the template.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="mini-step" data-step={3}>
-                      <span className="mini-step-num">3</span>
-                      <div className="mini-step-text">
+                  <div 
+                    className="bento-grid"
+                    onMouseMove={(e) => {
+                      for(const card of document.querySelectorAll(".bento-card")) {
+                        const rect = card.getBoundingClientRect(),
+                              x = e.clientX - rect.left,
+                              y = e.clientY - rect.top;
+                        card.style.setProperty("--mouse-x", `${x}px`);
+                        card.style.setProperty("--mouse-y", `${y}px`);
+                      }
+                    }}
+                  >
+                    {/* Card 1: Wide Photowall */}
+                    <div className="bento-card wide">
+                      <div className="bento-content-wrap">
+                        <div className="bento-icon">🖼️</div>
                         <h3>Live Digital Photowall</h3>
                         <p>
-                          Create an engaging and interactive experience with our
-                          optional Live Photo Wall. As guests upload, photos
-                          instantly appear on a dynamic wall.{" "}
-                          <a href="#tv-grid" className="scroll-link-tv">
-                            Try the simulator above 📸
+                          Create an engaging experience. As guests upload, photos instantly appear on a dynamic wall.
+                          <br/><br/>
+                          <a href="#tv-grid" className="scroll-link-tv" style={{color: "var(--accent-primary)", textDecoration: "none", fontWeight: 600}}>
+                            Try simulator above 📸
                           </a>
                         </p>
                       </div>
+                      <div className="bento-image-wrapper">
+                        <img src="/live_wall.webp" alt="Live Wall" className="bento-img" loading="lazy" />
+                      </div>
                     </div>
-                    <div className="mini-step" data-step={4}>
-                      <span className="mini-step-num">4</span>
-                      <div className="mini-step-text">
+
+                    {/* Card 2: QR Sign */}
+                    <div className="bento-card">
+                      <div className="bento-icon">📲</div>
+                      <h3>Design your QR Sign</h3>
+                      <p>
+                        Create your beautiful card. Use Canva templates to match your style perfectly.
+                      </p>
+                    </div>
+
+                    {/* Card 3: Zero Apps */}
+                    <div className="bento-card">
+                      <div className="bento-icon">⚡</div>
+                      <h3>Sign Up &amp; Create</h3>
+                      <p>
+                        Customize backgrounds, colors, and buttons to create a unique experience.
+                      </p>
+                    </div>
+
+                    {/* Card 4: High Res Downloads */}
+                    <div className="bento-card wide">
+                      <div className="bento-content-wrap">
+                        <div className="bento-icon">✨</div>
                         <h3>Enjoy the Memories</h3>
                         <p>
-                          Download all guest photos and videos in full
-                          high-resolution quality. Relive your special day
-                          forever.
+                          Download all guest photos and videos in full high-resolution quality. Relive your special day forever.
                         </p>
+                      </div>
+                      <div className="bento-image-wrapper">
+                         <img src="/beach_wedding_love.webp" alt="Memories" className="bento-img" loading="lazy" style={{objectPosition: "center top"}} />
                       </div>
                     </div>
                   </div>
