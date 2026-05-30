@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,24 +14,32 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <Link to="/" className="logo" style={{ textDecoration: "none" }}>
+    <nav className={`navbar ${scrolled ? "scrolled" : ""} ${menuOpen ? "nav-open" : ""}`}>
+      <Link to="/" className="logo" style={{ textDecoration: "none" }} onClick={closeMenu}>
         Catchmemo
       </Link>
-      <div className="hamburger">
+      <div className="hamburger" onClick={toggleMenu}>
         <span />
         <span />
         <span />
       </div>
       <div className="nav-menu">
         <div className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/celebration">Celebration</Link>
-          <Link to="/wall-of-love">Wall of love</Link>
-          <Link to="/pricing">Pricing</Link>
-          <Link to="/blog">Blog</Link>
-          <Link to="/faq">FAQ</Link>
+          <Link to="/" onClick={closeMenu}>Home</Link>
+          <Link to="/celebration" onClick={closeMenu}>Celebration</Link>
+          <Link to="/wall-of-love" onClick={closeMenu}>Wall of love</Link>
+          <Link to="/pricing" onClick={closeMenu}>Pricing</Link>
+          <Link to="/blog" onClick={closeMenu}>Blog</Link>
+          <Link to="/faq" onClick={closeMenu}>FAQ</Link>
         </div>
         <div className="nav-actions">
           <a href="https://app.catchmemo.com" className="nav-btn create-btn">
