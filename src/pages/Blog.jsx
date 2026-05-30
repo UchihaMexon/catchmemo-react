@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import useBlogAnimations from "../hooks/useBlogAnimations";
 
 const Blog = () => {

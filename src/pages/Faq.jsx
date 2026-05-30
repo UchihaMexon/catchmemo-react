@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import useFaqAnimations from "../hooks/useFaqAnimations";
 import FaqSchema from "../components/FaqSchema";
 

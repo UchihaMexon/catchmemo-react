@@ -1,15 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const CookieBanner = () => {
-  const [showBanner, setShowBanner] = useState(false);
-
-  useEffect(() => {
-    // Check if user has already made a choice
-    const consent = localStorage.getItem("cookieConsent");
-    if (!consent) {
-      setShowBanner(true);
-    }
-  }, []);
+  const [showBanner, setShowBanner] = useState(() => !localStorage.getItem("cookieConsent"));
 
   const handleAccept = () => {
     localStorage.setItem("cookieConsent", "accepted");
