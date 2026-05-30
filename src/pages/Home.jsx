@@ -62,12 +62,6 @@ const Home = () => {
                   </a>
                 </div>
               </div>
-              <div className="scroll-indicator">
-                <div className="mouse">
-                  <div className="wheel" />
-                </div>
-                <span className="scroll-text">Scroll to explore</span>
-              </div>
             </div>
           </section>
           

@@ -44,14 +44,15 @@ body {
 
 .curtain-container {
   position: fixed;
-  top: calc(var(--nav-height) - 1px);
+  top: 0;
   left: 0;
   width: 100vw;
-  height: calc(100vh - var(--nav-height) + 1px);
+  height: 100vh;
   z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   pointer-events: none;
 }
 
@@ -102,8 +103,10 @@ body {
   align-items: center;
   padding: 0 5%;
   z-index: 10000;
-  background: transparent;
-  border-bottom: 1px solid transparent;
+  background: rgba(6, 1, 18, 0.85);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   transition:
     background 0.4s ease,
     border-color 0.4s ease,
@@ -324,15 +327,14 @@ body {
 
 /* Original Homepage Hero Section */
 .hero-section {
-  height: 160vh; /* creates scrollable space */
   position: relative;
   z-index: 10; /* Lower than subsequent sections */
 }
 
 .video-container {
-  position: sticky;
-  top: var(--nav-height);
-  height: calc(100vh - var(--nav-height));
+  position: relative;
+  top: 0;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   display: flex;

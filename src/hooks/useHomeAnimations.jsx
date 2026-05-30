@@ -117,35 +117,6 @@ const useHomeAnimations = () => {
 
       function initScrollTriggers() {
         // Master timeline for the hero section to sequence hero-content exit and curtains closing
-        const masterHeroTl = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".hero-section",
-            start: "top top",
-            end: "bottom bottom", // Covers the entire scrollable space of the hero section
-            scrub: 1,
-          },
-        });
-
-        masterHeroTl
-          // Cinematic background image parallax zoom and fade on scroll
-          .to(
-            "#hero-bg-img",
-            { scale: 1.05, opacity: 0.12, duration: 5, ease: "none" },
-            0,
-          )
-          // Fade out scroll indicator quickly
-          .to(".scroll-indicator", { opacity: 0, duration: 1.2 }, 0)
-          // Close the curtains to transition to the next section immediately
-          .to(
-            ".video-curtain-left",
-            { xPercent: 0, duration: 4, ease: "power2.inOut" },
-            0,
-          )
-          .to(
-            ".video-curtain-right",
-            { xPercent: 0, duration: 4, ease: "power2.inOut" },
-            0,
-          );
         // 3. Depth Gallery Scroll Animations
         // Split ALL Depth Gallery Headings into Staggered Letter Spans for premium entry
         function splitDepthHeadings() {
@@ -220,14 +191,10 @@ const useHomeAnimations = () => {
             // 0. Rubriken hoppar in (Letter Reveal Animation)
             .fromTo(flowHeading.querySelectorAll("span"), { y: "110%", opacity: 1 }, { y: "0%", opacity: 1, duration: 0.5, ease: "back.out(1.6)", stagger: 0.02 })
             
-            // 1. All cards come in simultaneously with a slight stagger
+            // 1. All elements come in simultaneously with a slight stagger
             .fromTo(flowchartSteps, { y: 40, opacity: 0, scale: 0.9 }, { y: 0, opacity: 1, scale: 1, duration: 0.6, stagger: 0.15, ease: "back.out(1.2)" }, "-=0.2")
-            
-            // 2. Arrows draw in parallel
-            .to(flowchartArrows, { strokeDashoffset: 0, duration: 0.4, ease: "power2.inOut" }, "<0.2")
-            
-            // 3. UpBars fill up
-            .to(upBars, { width: "100%", duration: 0.4, stagger: 0.1, ease: "power1.inOut" }, "<0.1");
+            .to(flowchartArrows, { strokeDashoffset: 0, duration: 0.4, ease: "power2.inOut" }, "-=0.6")
+            .to(upBars, { width: "100%", duration: 0.4, stagger: 0.1, ease: "power1.inOut" }, "-=0.5");
         }
         
         // Desktop only layout animations (min-width: 901px)
