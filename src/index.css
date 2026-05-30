@@ -2161,6 +2161,12 @@ body {
     gap: 2rem;
   }
 
+  .feature-image-wrapper.left-side,
+  .feature-image-wrapper.right-side {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   .feature-content {
     max-width: 100%;
   }
