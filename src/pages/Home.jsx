@@ -688,20 +688,18 @@ const Home = () => {
                 </h3>
                 <div className="press-logos-wrapper">
                   <div className="press-logos">
-                    <span className="press-logo">Events Hosted: 500+</span>
-                    <span className="press-logo">Memories Shared: 2000+</span>
-                    <span className="press-logo">Happiness Index: 99.4%</span>
+                    <span className="press-logo">Events Hosted <span className="stat-highlight">1,200+</span></span>
+                    <span className="press-logo">Memories Shared <span className="stat-highlight">92,000+</span></span>
+                    <span className="press-logo">Happiness Index <span className="stat-highlight">99.4%</span></span>
                     <span className="press-logo">Zero Apps Required</span>
-                    <span className="press-logo">Setup in Seconds</span>
-                    <span className="press-logo">100% Private &amp; Secure</span>
+                    <span className="press-logo">Setup in Seconds <span className="stat-highlight">⚡</span></span>
                     
                     {/* Duplicate set for infinite scroll effect */}
-                    <span className="press-logo">Events Hosted: 500+</span>
-                    <span className="press-logo">Memories Shared: 2000+</span>
-                    <span className="press-logo">Happiness Index: 99.4%</span>
+                    <span className="press-logo">Events Hosted <span className="stat-highlight">1,200+</span></span>
+                    <span className="press-logo">Memories Shared <span className="stat-highlight">92,000+</span></span>
+                    <span className="press-logo">Happiness Index <span className="stat-highlight">99.4%</span></span>
                     <span className="press-logo">Zero Apps Required</span>
-                    <span className="press-logo">Setup in Seconds</span>
-                    <span className="press-logo">100% Private &amp; Secure</span>
+                    <span className="press-logo">Setup in Seconds <span className="stat-highlight">⚡</span></span>
                   </div>
                 </div>
               </div>
