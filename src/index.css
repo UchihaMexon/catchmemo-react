@@ -2389,7 +2389,10 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   line-height: 0.85;
-  color: #dc2743;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--accent-primary);
   text-decoration: none;
   cursor: default;
 }
