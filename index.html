@@ -29,6 +29,28 @@
     
     <!-- Preload critical LCP background image -->
     <link rel="preload" as="image" href="/hero_background.webp" fetchpriority="high">
+    
+    <!-- Schema Markup (Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Catchmemo",
+      "operatingSystem": "Web",
+      "applicationCategory": "PhotographyApplication",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "128"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Collect all photos and videos from your guests in full quality. No app required, simple QR code sharing, and a cinematic live photo wall."
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

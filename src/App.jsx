@@ -8,6 +8,8 @@ import Faq from "./pages/Faq";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import CookieBanner from "./components/CookieBanner";
+import Analytics from "./components/Analytics";
 import useSmoothScroll from "./hooks/useSmoothScroll";
 import "./index.css";
 
@@ -17,6 +19,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <Analytics />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,6 +30,7 @@ function App() {
         <Route path="/faq" element={<Faq />} />
       </Routes>
       <Footer />
+      <CookieBanner />
     </Router>
   );
 }

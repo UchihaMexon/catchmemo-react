@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useFaqAnimations from "../hooks/useFaqAnimations";
+import FaqSchema from "../components/FaqSchema";
 
 const Faq = () => {
   useFaqAnimations();
 
   return (
     <>
+      <FaqSchema />
       <main className="main-content faq-page">
         <section className="faq-hero-section">
           <div className="faq-hero-content">
