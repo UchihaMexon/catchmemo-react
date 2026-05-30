@@ -850,9 +850,7 @@ const Home = () => {
                 data-lenis-prevent="true"
               >
                 <div className="theme-modal-image-side">
-                  <img alt="Event photo"  
-                    src
-                    alt
+                  <img alt="Event photo" src=""
                     className="theme-modal-img"
                     id="theme-modal-img"
                   loading="lazy" />
