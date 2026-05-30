@@ -25,7 +25,7 @@ const Blog = () => {
               <div
                 className="featured-img-col"
                 style={{
-                  backgroundImage: 'url("./blog_wedding_confetti.jpg")',
+                  backgroundImage: 'url("./blog_wedding_confetti.webp")',
                 }}
               />
               <div className="featured-text-col">
@@ -57,7 +57,7 @@ const Blog = () => {
                   className="card-img"
                   style={{
                     backgroundImage:
-                      'url("./axville-8vheRi6dbaw-unsplash.jpg")',
+                      'url("./axville-8vheRi6dbaw-unsplash.webp")',
                   }}
                 />
                 <div className="card-body">
@@ -85,7 +85,7 @@ const Blog = () => {
                   className="card-img"
                   style={{
                     backgroundImage:
-                      'url("./pexels-rebornfilmes-33542457.jpg")',
+                      'url("./pexels-rebornfilmes-33542457.webp")',
                   }}
                 />
                 <div className="card-body">
@@ -111,7 +111,7 @@ const Blog = () => {
                 <div
                   className="card-img"
                   style={{
-                    backgroundImage: 'url("./blog_wedding_dancing.jpg")',
+                    backgroundImage: 'url("./blog_wedding_dancing.webp")',
                   }}
                 />
                 <div className="card-body">

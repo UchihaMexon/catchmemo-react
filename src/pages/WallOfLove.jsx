@@ -49,11 +49,11 @@ const WallOfLove = () => {
               </div>
             </div>
             <div className="featured-story-img-col">
-              <img
-                src="/beach_wedding_love.jpg"
+              <img 
+                src="/beach_wedding_love.webp"
                 alt="Mark and Lexi beach wedding celebration"
                 className="featured-story-image"
-              />
+              loading="lazy" />
             </div>
           </div>
         </section>
@@ -187,7 +187,7 @@ const WallOfLove = () => {
             <div className="wall-card wall-polaroid-card masonry-item">
               <div
                 className="polaroid-photo"
-                style={{ backgroundImage: 'url("./wedding_party_1.jpg")' }}
+                style={{ backgroundImage: 'url("./wedding_party_1.webp")' }}
               />
               <div className="polaroid-scribble">
                 "Scan to share, we shared the love! — Maja &amp; Robin 14.09.25"
@@ -249,7 +249,7 @@ const WallOfLove = () => {
             <div className="wall-card wall-polaroid-card masonry-item">
               <div
                 className="polaroid-photo"
-                style={{ backgroundImage: 'url("./birthday_party_1.jpg")' }}
+                style={{ backgroundImage: 'url("./birthday_party_1.webp")' }}
               />
               <div className="polaroid-scribble">
                 "Grandma's 80th birthday! The whole family gathered ♥"
@@ -398,7 +398,7 @@ const WallOfLove = () => {
             <div className="wall-card wall-polaroid-card masonry-item">
               <div
                 className="polaroid-photo"
-                style={{ backgroundImage: 'url("./baby_shower_1.jpg")' }}
+                style={{ backgroundImage: 'url("./baby_shower_1.webp")' }}
               />
               <div className="polaroid-scribble">
                 "Waiting for baby sister! 👶🏼✨ — Julia's shower"
@@ -458,7 +458,7 @@ const WallOfLove = () => {
             <div className="wall-card wall-polaroid-card masonry-item">
               <div
                 className="polaroid-photo"
-                style={{ backgroundImage: 'url("./wedding_party_2.jpg")' }}
+                style={{ backgroundImage: 'url("./wedding_party_2.webp")' }}
               />
               <div className="polaroid-scribble">
                 "The best day of our lives! 💍🤍 — Mikaela &amp; Alexander"
@@ -528,7 +528,7 @@ const WallOfLove = () => {
             <div className="marquee-track">
               <div className="marquee-item">
                 <img
-                  src="/wedding_party_3.jpg"
+                  src="/wedding_party_3.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"
@@ -537,7 +537,7 @@ const WallOfLove = () => {
               </div>
               <div className="marquee-item">
                 <img
-                  src="/birthday_party_2.jpg"
+                  src="/birthday_party_2.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"
@@ -546,7 +546,7 @@ const WallOfLove = () => {
               </div>
               <div className="marquee-item">
                 <img
-                  src="/baby_shower_2.jpg"
+                  src="/baby_shower_2.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"
@@ -555,7 +555,7 @@ const WallOfLove = () => {
               </div>
               <div className="marquee-item">
                 <img
-                  src="/birthday_party_3.jpg"
+                  src="/birthday_party_3.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"
@@ -564,7 +564,7 @@ const WallOfLove = () => {
               </div>
               <div className="marquee-item">
                 <img
-                  src="/baby_shower_3.jpg"
+                  src="/baby_shower_3.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"
@@ -573,7 +573,7 @@ const WallOfLove = () => {
               </div>
               <div className="marquee-item">
                 <img
-                  src="/wedding_party_1.jpg"
+                  src="/wedding_party_1.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"
@@ -582,7 +582,7 @@ const WallOfLove = () => {
               </div>
               <div className="marquee-item">
                 <img
-                  src="/wedding_party_3.jpg"
+                  src="/wedding_party_3.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"
@@ -591,7 +591,7 @@ const WallOfLove = () => {
               </div>
               <div className="marquee-item">
                 <img
-                  src="/birthday_party_2.jpg"
+                  src="/birthday_party_2.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"
@@ -600,7 +600,7 @@ const WallOfLove = () => {
               </div>
               <div className="marquee-item">
                 <img
-                  src="/baby_shower_2.jpg"
+                  src="/baby_shower_2.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"
@@ -609,7 +609,7 @@ const WallOfLove = () => {
               </div>
               <div className="marquee-item">
                 <img
-                  src="/birthday_party_3.jpg"
+                  src="/birthday_party_3.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"
@@ -618,7 +618,7 @@ const WallOfLove = () => {
               </div>
               <div className="marquee-item">
                 <img
-                  src="/baby_shower_3.jpg"
+                  src="/baby_shower_3.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"
@@ -627,7 +627,7 @@ const WallOfLove = () => {
               </div>
               <div className="marquee-item">
                 <img
-                  src="/wedding_party_1.jpg"
+                  src="/wedding_party_1.webp"
                   alt="Guest memory upload"
                   loading="lazy"
                   decoding="async"

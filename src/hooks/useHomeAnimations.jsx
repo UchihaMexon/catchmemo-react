@@ -1253,7 +1253,7 @@ const useHomeAnimations = () => {
             const newCard = document.createElement("div");
             newCard.className = "tv-photo-card";
             newCard.style.opacity = "0";
-            newCard.innerHTML = `<img src="${imageSrc}" alt="Guest photo">`;
+            newCard.innerHTML = `<img src="${imageSrc}" alt="Guest photo" loading="lazy">`;
 
             tvGrid.insertBefore(newCard, tvGrid.firstChild);
 
@@ -1367,28 +1367,28 @@ const useHomeAnimations = () => {
         wedding: {
           title: "Weddings",
           subtitle: "💍 Wedding Day",
-          image: "./beach_wedding_love.jpg",
+          image: "./beach_wedding_love.webp",
           description:
             "Let your guests capture every angle of your special day. From the pre-wedding preparations to the late-night dance floor, collect all photos and videos in full quality. No app required, just scan and share.",
         },
         birthday: {
           title: "Birthdays",
           subtitle: "🎂 Birthday Party",
-          image: "./party_pricing.jpg",
+          image: "./party_pricing.webp",
           description:
             "Celebrate another trip around the sun! Make sure you don't miss a single moment of the laughter, the cake, and the celebration. Guests can upload instantly, building a shared digital memory book in seconds.",
         },
         party: {
           title: "Parties",
           subtitle: "🥳 Let's Celebrate",
-          image: "./hero_col4.png",
+          image: "./hero_col4.webp",
           description:
             "Whether it's a graduation, an anniversary, or a weekend bash, keep all the memories in one place. Stream guest uploads to a live photo wall and let everyone be the photographer for your epic celebration.",
         },
         babyshower: {
           title: "Baby Showers",
           subtitle: "👶 Baby Shower",
-          image: "./table_card_baby_shower.jpg",
+          image: "./table_card_baby_shower.webp",
           description:
             "Celebrate the new arrival with all your loved ones. Gather every heartfelt message, photo, and sweet moment easily. Simple QR codes on tables allow guests of all ages to participate stress-free.",
         },

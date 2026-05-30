@@ -15,7 +15,7 @@ const Celebration = () => {
           <div className="hero-grid-container">
             <div
               className="hero-grid-col hero-col-main"
-              style={{ backgroundImage: 'url("./hero_col1.jpg")' }}
+              style={{ backgroundImage: 'url("./hero_col1.webp")' }}
             >
               <div className="hero-col-overlay" />
               <div className="hero-col-content">
@@ -36,21 +36,21 @@ const Celebration = () => {
             </div>
             <div
               className="hero-grid-col hero-col-narrow"
-              style={{ backgroundImage: 'url("./hero_col2.jpg")' }}
+              style={{ backgroundImage: 'url("./hero_col2.webp")' }}
             >
               <div className="hero-col-overlay" />
               <div className="hero-col-content"></div>
             </div>
             <div
               className="hero-grid-col hero-col-narrow"
-              style={{ backgroundImage: 'url("./hero_col3.jpg")' }}
+              style={{ backgroundImage: 'url("./hero_col3.webp")' }}
             >
               <div className="hero-col-overlay" />
               <div className="hero-col-content"></div>
             </div>
             <div
               className="hero-grid-col hero-col-narrow"
-              style={{ backgroundImage: 'url("./hero_col4.jpg")' }}
+              style={{ backgroundImage: 'url("./hero_col4.webp")' }}
             >
               <div className="hero-col-overlay" />
               <div className="hero-col-content"></div>
@@ -404,11 +404,11 @@ const Celebration = () => {
                 className="templates-image-wrap"
                 style={{ aspectRatio: "4 / 5", maxWidth: 380 }}
               >
-                <img
-                  src="/table_card_baby_shower.jpg"
+                <img 
+                  src="/table_card_baby_shower.webp"
                   alt="Baby shower table card"
                   className="templates-display-image"
-                />
+                loading="lazy" />
               </div>
             </div>
           </div>
@@ -416,12 +416,12 @@ const Celebration = () => {
         <section className="final-touch-section" id="final-touch">
           <div className="final-touch-container">
             <div className="final-touch-image-col">
-              <img
-                src="/wedding_testimonial.jpg"
+              <img 
+                src="/wedding_testimonial.webp"
                 alt="Wedding celebration"
                 className="final-touch-image"
                 id="final-touch-img"
-              />
+              loading="lazy" />
             </div>
             <div className="final-touch-text-col">
               <h2 className="final-touch-title" id="final-touch-heading">

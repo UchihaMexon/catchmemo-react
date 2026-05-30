@@ -17,7 +17,7 @@ const Home = () => {
           <section className="hero-section">
             <div className="video-container">
               <img
-                src="/hero_background.jpg"
+                src="/hero_background.webp"
                 id="hero-bg-img"
                 alt="Catchmemo Memory Collage"
                 className="hero-bg-image"
@@ -130,16 +130,16 @@ const Home = () => {
                       </div>
                       <div className="sim-tv-grid" id="tv-grid">
                         <div className="tv-photo-card">
-                          <img src="/wedding.png" alt="Wedding" />
+                          <img src="/wedding.webp" alt="Wedding" loading="lazy" />
                         </div>
                         <div className="tv-photo-card">
-                          <img src="/birthday.png" alt="Birthday" />
+                          <img src="/birthday.webp" alt="Birthday" loading="lazy" />
                         </div>
                         <div className="tv-photo-card">
-                          <img src="/baby_shower.png" alt="Baby shower" />
+                          <img src="/baby_shower.webp" alt="Baby shower" loading="lazy" />
                         </div>
                         <div className="tv-photo-card">
-                          <img src="/celebrations.png" alt="Celebrations" />
+                          <img src="/celebrations.webp" alt="Celebrations" loading="lazy" />
                         </div>
                       </div>
                     </div>
@@ -165,24 +165,24 @@ const Home = () => {
                           <div className="sim-phone-thumbnails">
                             <button
                               className="thumb-upload-btn"
-                              data-img="./how_it_works.png"
+                              data-img="./how_it_works.webp"
                               aria-label="Upload How It Works"
                             >
-                              <img src="/how_it_works.png" alt="Upload 1" />
+                              <img src="/how_it_works.webp" alt="Upload 1" loading="lazy" />
                             </button>
                             <button
                               className="thumb-upload-btn"
-                              data-img="./live_wall.jpg"
+                              data-img="./live_wall.webp"
                               aria-label="Upload Live Wall"
                             >
-                              <img src="/live_wall.jpg" alt="Upload 2" />
+                              <img src="/live_wall.webp" alt="Upload 2" loading="lazy" />
                             </button>
                             <button
                               className="thumb-upload-btn"
-                              data-img="./pricing.png"
+                              data-img="./pricing.webp"
                               aria-label="Upload Pricing"
                             >
-                              <img src="/pricing.png" alt="Upload 3" />
+                              <img src="/pricing.webp" alt="Upload 3" loading="lazy" />
                             </button>
                           </div>
                           <span className="sim-phone-or">
@@ -279,11 +279,11 @@ const Home = () => {
                       data-id="wedding"
                     >
                       <div className="theme-card-img-wrap">
-                        <img
-                          src="/beach_wedding_love.jpg"
+                        <img 
+                          src="/beach_wedding_love.webp"
                           alt="Weddings"
                           className="theme-card-img"
-                        />
+                        loading="lazy" />
                         <div className="theme-card-overlay" />
                       </div>
                       <div className="theme-card-content">
@@ -317,11 +317,11 @@ const Home = () => {
                       data-id="birthday"
                     >
                       <div className="theme-card-img-wrap">
-                        <img
-                          src="/party_pricing.jpg"
+                        <img 
+                          src="/party_pricing.webp"
                           alt="Birthdays"
                           className="theme-card-img"
-                        />
+                        loading="lazy" />
                         <div className="theme-card-overlay" />
                       </div>
                       <div className="theme-card-content">
@@ -354,7 +354,7 @@ const Home = () => {
                     <div className="theme-card" data-step={3} data-id="party">
                       <div className="theme-card-img-wrap">
                         <img
-                          src="/hero_col4.png"
+                          src="/hero_col4.webp"
                           alt="Parties"
                           className="theme-card-img"
                         />
@@ -393,11 +393,11 @@ const Home = () => {
                       data-id="babyshower"
                     >
                       <div className="theme-card-img-wrap">
-                        <img
-                          src="/table_card_baby_shower.jpg"
+                        <img 
+                          src="/table_card_baby_shower.webp"
                           alt="Baby Showers"
                           className="theme-card-img"
-                        />
+                        loading="lazy" />
                         <div className="theme-card-overlay" />
                       </div>
                       <div className="theme-card-content">
@@ -615,7 +615,7 @@ const Home = () => {
                   <Link to="/celebration" className="polaroid-card">
                     <div className="polaroid-inner">
                       <img
-                        src="/celebrations.png"
+                        src="/celebrations.webp"
                         alt="Celebration"
                         loading="lazy"
                         decoding="async"
@@ -630,7 +630,7 @@ const Home = () => {
                   <Link to="/wall-of-love" className="polaroid-card">
                     <div className="polaroid-inner">
                       <img
-                        src="/wedding_testimonial.jpg"
+                        src="/wedding_testimonial.webp"
                         alt="Wall of love"
                         loading="lazy"
                         decoding="async"
@@ -645,7 +645,7 @@ const Home = () => {
                   <Link to="/pricing" className="polaroid-card">
                     <div className="polaroid-inner">
                       <img
-                        src="/older_couple_pricing.jpg"
+                        src="/older_couple_pricing.webp"
                         alt="Pricing"
                         loading="lazy"
                         decoding="async"
@@ -660,7 +660,7 @@ const Home = () => {
                   <Link to="/blog" className="polaroid-card">
                     <div className="polaroid-inner">
                       <img
-                        src="/blog_wedding_dancing.jpg"
+                        src="/blog_wedding_dancing.webp"
                         alt="Blog"
                         loading="lazy"
                         decoding="async"
@@ -851,12 +851,12 @@ const Home = () => {
                 data-lenis-prevent="true"
               >
                 <div className="theme-modal-image-side">
-                  <img
+                  <img 
                     src
                     alt
                     className="theme-modal-img"
                     id="theme-modal-img"
-                  />
+                  loading="lazy" />
                   <div className="theme-modal-img-overlay" />
                 </div>
                 <div className="theme-modal-text-side">
