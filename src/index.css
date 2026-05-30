@@ -5083,11 +5083,6 @@ body {
     color 0.3s;
 }
 
-.templates-features li:hover .feature-icon-wrap {
-  background-color: var(--theme-color, #ff85a2);
-  color: #ffffff;
-}
-
 .templates-features .feature-text {
   font-size: 1.05rem;
   color: rgba(6, 1, 18, 0.8);
@@ -7763,4 +7758,15 @@ body {
 /* For stroke animations specifically */
 .arrow-path {
     will-change: stroke-dashoffset;
+}
+
+/* Hardware acceleration for flow steps to prevent stuttering */
+.flow-step,
+.arrow-path,
+.up-progress,
+.flow-heading span {
+  will-change: transform, opacity, stroke-dashoffset, width;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }

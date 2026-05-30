@@ -250,7 +250,7 @@ const WallOfLove = () => {
                 style={{ backgroundImage: 'url("./birthday_party_1.webp")' }}
               />
               <div className="polaroid-scribble">
-                "Grandma's 80th birthday! The whole family gathered ♥"
+                "The perfect birthday cake! 🎈"
               </div>
             </div>
             <div className="wall-card masonry-item">

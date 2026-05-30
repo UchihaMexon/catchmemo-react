@@ -108,7 +108,7 @@ const Home = () => {
             </div>
             <div className="depth-gallery-sticky">
 <section className="flowchart-section depth-item light-theme">
-                <div className="flow-heading-wrapper desktop-heading-fix" style={{ position: "absolute", top: "clamp(80px, 15vh, 120px)", left: "50%", transform: "translateX(-50%)", width: "100%", margin: "0", zIndex: "10" }}>
+                <div className="flow-heading-wrapper desktop-heading-fix" style={{ position: "absolute", top: "clamp(80px, 15vh, 120px)", left: "50%", transform: "translateX(-50%)", width: "100%", margin: "0", zIndex: "10", overflow: "hidden" }}>
                   <h2 className="gradient-text flow-heading" style={{ textAlign: "center", lineHeight: "1.1" }}>Easy to use</h2>
                 </div>
                 

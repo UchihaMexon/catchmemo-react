@@ -134,78 +134,17 @@ const useHomeAnimations = () => {
             0,
           )
           // Fade out scroll indicator quickly
-          .to(".scroll-indicator", { opacity: 0, y: 50, duration: 1.2 }, 0)
-          // Fade out and slide up the individual hero elements with an organic sequential floating motion (back.in ease for anticipation dip, tight staggers, varying drift/lift)
-          .to(
-            ".reveal-text .line:nth-child(1) span",
-            {
-              x: -35,
-              y: -360,
-              rotate: -4,
-              opacity: 0,
-              duration: 2.2,
-              ease: "back.in(1.2)",
-            },
-            0.1,
-          )
-          .to(
-            ".reveal-text .line:nth-child(2) span",
-            {
-              x: 35,
-              y: -330,
-              rotate: 4,
-              opacity: 0,
-              duration: 2.2,
-              ease: "back.in(1.2)",
-            },
-            0.2,
-          )
-          .to(
-            ".hero-content .hero-tagline",
-            {
-              x: -25,
-              y: -290,
-              rotate: -2.5,
-              opacity: 0,
-              duration: 2.2,
-              ease: "back.in(1.2)",
-            },
-            0.32,
-          )
-          .to(
-            ".hero-content .subtitle",
-            {
-              x: 25,
-              y: -250,
-              rotate: 2,
-              opacity: 0,
-              duration: 2.2,
-              ease: "back.in(1.2)",
-            },
-            0.45,
-          )
-          .to(
-            ".hero-content .liquid-button",
-            {
-              x: -15,
-              y: -200,
-              rotate: -1.5,
-              opacity: 0,
-              duration: 2.2,
-              ease: "back.in(1.2)",
-            },
-            0.58,
-          )
-          // Close the curtains to transition to the next section
+          .to(".scroll-indicator", { opacity: 0, duration: 1.2 }, 0)
+          // Close the curtains to transition to the next section immediately
           .to(
             ".video-curtain-left",
-            { xPercent: 0, duration: 2.5, ease: "power2.inOut" },
-            2.4,
+            { xPercent: 0, duration: 4, ease: "power2.inOut" },
+            0,
           )
           .to(
             ".video-curtain-right",
-            { xPercent: 0, duration: 2.5, ease: "power2.inOut" },
-            2.4,
+            { xPercent: 0, duration: 4, ease: "power2.inOut" },
+            0,
           );
         // 3. Depth Gallery Scroll Animations
         // Split ALL Depth Gallery Headings into Staggered Letter Spans for premium entry
@@ -278,26 +217,17 @@ const useHomeAnimations = () => {
           gsap.set(upBars, { width: "0%" });
 
           flowTl
-            // 0. Rubriken hoppar in
-            .fromTo(flowHeading, { y: 40, opacity: 0, scale: 0.9 }, { y: 0, opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.5)" })
+            // 0. Rubriken hoppar in (Letter Reveal Animation)
+            .fromTo(flowHeading.querySelectorAll("span"), { y: "110%", opacity: 1 }, { y: "0%", opacity: 1, duration: 0.5, ease: "back.out(1.6)", stagger: 0.02 })
             
-            // 1. QR + Text svävar in
-            .fromTo(flowchartSteps[0], { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.25, ease: "power2.out" }, "-=0.1")
+            // 1. All cards come in simultaneously with a slight stagger
+            .fromTo(flowchartSteps, { y: 40, opacity: 0, scale: 0.9 }, { y: 0, opacity: 1, scale: 1, duration: 0.6, stagger: 0.15, ease: "back.out(1.2)" }, "-=0.2")
             
-            // 2. Pilen ritas
-            .to(flowchartArrows[0], { strokeDashoffset: 0, duration: 0.15, ease: "power1.inOut" }, "-=0.1")
+            // 2. Arrows draw in parallel
+            .to(flowchartArrows, { strokeDashoffset: 0, duration: 0.4, ease: "power2.inOut" }, "<0.2")
             
-            // 3. Uppladdning + Text svävar in
-            .fromTo(flowchartSteps[1], { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.25, ease: "power2.out" }, "-=0.05")
-            
-            // 3.5 Mätarna fylls på
-            .to(upBars, { width: "100%", duration: 0.25, stagger: 0.05, ease: "power1.inOut" }, "-=0.2")
-            
-            // 4. Pilen ritas
-            .to(flowchartArrows[1], { strokeDashoffset: 0, duration: 0.15, ease: "power1.inOut" }, "-=0.1")
-            
-            // 5. Mobilen + Text svävar in
-            .fromTo(flowchartSteps[2], { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.25, ease: "power2.out" }, "-=0.05");
+            // 3. UpBars fill up
+            .to(upBars, { width: "100%", duration: 0.4, stagger: 0.1, ease: "power1.inOut" }, "<0.1");
         }
         
         // Desktop only layout animations (min-width: 901px)
