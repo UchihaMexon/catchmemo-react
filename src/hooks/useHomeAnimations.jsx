@@ -183,18 +183,31 @@ const useHomeAnimations = () => {
             }
           });
 
-          // Set initial state to prevent flickering
+          // Set initial states
           gsap.set(flowchartArrows, { strokeDashoffset: 100 });
-          gsap.set(flowchartSteps, { y: 60, opacity: 0, scale: 0.95 });
+          // No initial hiding of the flowchartSteps anymore
+          gsap.set(".qr-img", { scale: 0, opacity: 0 });
+          gsap.set(upBars, { width: "0%" });
+          gsap.set(".sim-phone-img", { scale: 0.5, opacity: 0 });
 
           flowTl
-            // 0. Rubriken hoppar in (Letter Reveal Animation)
+            // 0. Heading letter reveal
             .fromTo(flowHeading.querySelectorAll("span"), { y: "110%", opacity: 1 }, { y: "0%", opacity: 1, duration: 0.5, ease: "power3.out", stagger: 0.02 })
             
-            // 1. All elements come in smoothly one by one
-            .to(flowchartSteps, { y: 0, opacity: 1, scale: 1, duration: 0.8, stagger: 0.15, ease: "power3.out" }, "-=0.2")
-            .to(flowchartArrows, { strokeDashoffset: 0, duration: 0.6, ease: "power2.inOut" }, "-=0.6")
-            .to(upBars, { width: "100%", duration: 0.6, stagger: 0.1, ease: "power1.inOut" }, "-=0.5");
+            // 1. Step 1 internal effect: QR code pops in
+            .to(".qr-img", { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(1.5)" }, "+=0.2")
+            
+            // Arrow 1 draws
+            .to(flowchartArrows[0], { strokeDashoffset: 0, duration: 0.4, ease: "power2.inOut" }, "-=0.2")
+            
+            // 2. Step 2 internal effect: Upload bars fill up
+            .to(upBars, { width: "100%", duration: 0.6, stagger: 0.15, ease: "power1.inOut" })
+            
+            // Arrow 2 draws
+            .to(flowchartArrows[1], { strokeDashoffset: 0, duration: 0.4, ease: "power2.inOut" }, "-=0.2")
+            
+            // 3. Step 3 internal effect: Phone images pop in
+            .to(".sim-phone-img", { scale: 1, opacity: 1, duration: 0.5, stagger: 0.1, ease: "back.out(1.5)" });
         }
         
         // Desktop only layout animations (min-width: 901px)

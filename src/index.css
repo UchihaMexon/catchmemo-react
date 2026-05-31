@@ -7570,7 +7570,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 15px; /* Texten nära kortet */
     width: 100%;
     max-width: 280px;
 }
@@ -7578,8 +7578,7 @@ body {
 /* Graphic wrapper for consistent baseline alignment */
 .flowchart-container.linear-layout .flow-graphic-wrapper {
     height: auto;
-    min-height: 180px; /* Mobile safe size */
-    padding: 20px 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7623,23 +7622,26 @@ body {
 
 /* DESKTOP REFINEMENTS (min-width: 900px) */
 @media (min-width: 900px) {
-    .flowchart-container.linear-layout .flow-step {
-        max-width: 250px;
+    .flowchart-container.linear-layout {
+        padding-right: 50px; /* Centering Easy to use */
     }
-    
-    /* Pull mobile phone step closer to center visually */
-    .flowchart-container.linear-layout .flow-step:nth-child(5) {
-        max-width: 200px;
+
+    .flowchart-container.linear-layout .flow-step {
+        width: 250px;
+        max-width: none;
     }
 
     .flowchart-container.linear-layout .flow-graphic-wrapper {
         height: 330px;
         padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Move mobile phone graphic down for vertical alignment */
     .flowchart-container.linear-layout .flowchart-sim-phone {
-        margin-top: 90px !important; /* Pushed down a bit more to align with the newly lowered cards */
+        margin-top: 48px !important; 
     }
 
     /* Arrows display and centering */
@@ -7649,7 +7651,8 @@ body {
         justify-content: center;
         height: 330px;
         width: 100px;
-        margin: 0 -15px;
+        margin: 65px -15px 0 -15px; /* Push arrows down past the text height to align with graphic wrappers */
+        padding-top: 0; 
     }
     
     .flowchart-container.linear-layout .flow-arrow-right {
@@ -7709,30 +7712,26 @@ body {
 .flowchart-section.light-theme {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-/* RE-APPLY CUSTOM SIZE FOR EASY TO USE HEADING (SLIGHTLY LARGER) */
-.flowchart-section.light-theme h2.flow-heading {
-    font-size: clamp(2rem, 4vw, 3.2rem) !important; /* Ca 88px, lagom uppskalning från standard 4rem */
-}
+/* Flow heading size override removed so it matches Live Photo Wall */
 
-/* PUSH EVERYTHING ELSE DOWN TO COMPENSATE FOR LOWER HEADING */
-.flowchart-section.light-theme .flowchart-container {
-    margin-top: 8vh !important; /* Skapar mer andrum i toppen och pressar ner flödesschemat */
-}
+/* Container margin handled by relative flow now */
 
-/* INCREASE GAP BETWEEN GRAPHICS AND TEXT AS REQUESTED */
+/* ADJUST GAP BETWEEN GRAPHICS AND TEXT */
 .flowchart-container.linear-layout .flow-text {
-    margin-top: 25px !important; /* Flyttar ner texten en bit från korten/mobilen */
+    margin-top: 0 !important; /* Texten ligger nu högst upp, ingen margin-top behövs */
+    margin-bottom: 5px !important; /* Puta texten ännu närmare korten */
 }
 
-/* PUSH FIRST TWO CARDS DOWN CLOSER TO TEXT */
+/* ALIGN ALL CARDS CORRECTLY */
 @media (min-width: 900px) {
     .flowchart-container.linear-layout .flow-node-1,
     .flowchart-container.linear-layout .flow-node-2 {
-        margin-top: 40px !important; /* Flyttar ner de vita korten (QR & Upload) närmre texten */
+        margin-top: 0 !important; /* Korten ska inte tryckas ner extra längre */
     }
 }
 

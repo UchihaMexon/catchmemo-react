@@ -102,8 +102,8 @@ const Home = () => {
             </div>
             <div className="depth-gallery-sticky">
 <section className="flowchart-section depth-item light-theme">
-                <div className="flow-heading-wrapper desktop-heading-fix" style={{ position: "absolute", top: "clamp(80px, 15vh, 120px)", left: "50%", transform: "translateX(-50%)", width: "100%", margin: "0", zIndex: "10", overflow: "hidden" }}>
-                  <h2 className="gradient-text flow-heading" style={{ textAlign: "center", lineHeight: "1.1" }}>Easy to use</h2>
+                <div className="flow-heading-wrapper" style={{ position: "relative", width: "100%", marginBottom: "15px", overflow: "hidden" }}>
+                  <h2 className="gradient-text flow-heading" style={{ textAlign: "center", lineHeight: "1.1", margin: 0 }}>Easy to use</h2>
                 </div>
                 
                 
@@ -111,6 +111,10 @@ const Home = () => {
                 <div className="flowchart-container linear-layout">
                     {/* Step 1 */}
                     <div className="flow-step">
+                      <div className="flow-text" style={{ marginBottom: "20px" }}>
+                        <h3>1. Scan QR Code</h3>
+                        <p>No app to download. Guests simply point their camera.</p>
+                      </div>
                       <div className="flow-graphic-wrapper"><div className="flow-card qr-card flow-node-1">
                         <div className="qr-frame">
                           <div className="qr-corner tl" />
@@ -119,12 +123,7 @@ const Home = () => {
                           <div className="qr-corner br" />
                           <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://catchmemo.com" alt="QR" className="qr-img" />
                         </div>
-                        
                       </div></div>
-                      <div className="flow-text">
-                        <h3>1. Scan QR Code</h3>
-                        <p>No app to download. Guests simply point their camera.</p>
-                      </div>
                     </div>
 
                     {/* Arrow 1 */}
@@ -136,6 +135,10 @@ const Home = () => {
 
                     {/* Step 2 */}
                     <div className="flow-step">
+                      <div className="flow-text" style={{ marginBottom: "20px" }}>
+                        <h3>2. Snap & Upload</h3>
+                        <p>Guests take photos and upload directly from their browser.</p>
+                      </div>
                       <div className="flow-graphic-wrapper"><div className="flow-card upload-card flow-node-2">
                         <div className="upload-item">
                           <div className="up-thumb" style={{ backgroundImage: "url('/beach_wedding_love.webp')" }} />
@@ -159,10 +162,6 @@ const Home = () => {
                           </div>
                         </div>
                       </div></div>
-                      <div className="flow-text">
-                        <h3>2. Snap & Upload</h3>
-                        <p>Guests take photos and upload directly from their browser.</p>
-                      </div>
                     </div>
 
                     {/* Arrow 2 */}
@@ -174,7 +173,10 @@ const Home = () => {
 
                     {/* Step 3 */}
                     <div className="flow-step">
-                      
+                      <div className="flow-text" style={{ marginBottom: "20px" }}>
+                        <h3>3. Shared Album</h3>
+                        <p>Everything instantly drops into your private digital gallery.</p>
+                      </div>
                       <div className="flow-graphic-wrapper"><div className="sim-phone flow-node-3 flowchart-sim-phone" style={{ transform: "scale(0.85)", transformOrigin: "top center" }}>
                         <div className="sim-phone-notch" />
                         <div className="sim-phone-screen">
@@ -186,18 +188,14 @@ const Home = () => {
                               Sarah's 30th
                             </p>
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', width: '100%' }}>
-                              <div style={{ backgroundImage: "url('/party_pricing.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-                              <div style={{ backgroundImage: "url('/hero_col4.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-                              <div style={{ backgroundImage: "url('/how_it_works.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-                              <div style={{ backgroundImage: "url('/beach_wedding_love.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+                              <div className="sim-phone-img" style={{ backgroundImage: "url('/party_pricing.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+                              <div className="sim-phone-img" style={{ backgroundImage: "url('/hero_col4.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+                              <div className="sim-phone-img" style={{ backgroundImage: "url('/how_it_works.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+                              <div className="sim-phone-img" style={{ backgroundImage: "url('/beach_wedding_love.webp')", height: '55px', borderRadius: '6px', backgroundSize: 'cover', backgroundPosition: 'center' }} />
                             </div>
                           </div>
                         </div>
                       </div></div>
-                      <div className="flow-text">
-                        <h3>3. Shared Album</h3>
-                        <p>Everything instantly drops into your private digital gallery.</p>
-                      </div>
                     </div>
                 </div>
 
